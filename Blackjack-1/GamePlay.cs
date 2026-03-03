@@ -18,7 +18,7 @@ public class GamePlay
             if (deck.CardCount > 30)
             {
                 Console.Clear();
-                Console.WriteLine("카드가 많이 사용되어 새로 섞습니다...");
+                Console.WriteLine("카드가 많이 사용되어 새로 섞고 있습니다...");
                 Thread.Sleep(2000);
                 Start();
             }
