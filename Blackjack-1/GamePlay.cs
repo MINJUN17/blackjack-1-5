@@ -9,8 +9,6 @@ public class GamePlay
     private Deck deck = new Deck();
     private bool restart = false;
     private Betting bet = new Betting();
-    Player player = new Player("플레이어");
-    Player dealer = new Player("딜러");
     public int Winner { get; private set; }
     public void Run()
     {
@@ -36,6 +34,8 @@ public class GamePlay
     }
     public void Playing()
     {
+        Player player = new Player("플레이어");
+        Player dealer = new Player("딜러");
         bet.BettingCoin();
         Console.Clear();
         bet.BettingPrint();
