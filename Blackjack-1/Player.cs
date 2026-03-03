@@ -9,9 +9,6 @@ public class Player
     public int HandCount { get; private set; } = 0;
     private bool first;
     private string playerName;
-    //private ConsoleColor blackCardColor = ConsoleColor.Blue;
-    //private ConsoleColor RedCardColor = ConsoleColor.Red;
-    //private ConsoleColor HideCardColor = ConsoleColor.Yellow;
     public Player(string name)
     {
         playerName = name;
