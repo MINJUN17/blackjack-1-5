@@ -9,6 +9,8 @@ public class GamePlay
     private Deck deck = new Deck();
     private bool restart = false;
     private Betting bet = new Betting();
+    Player player = new Player("플레이어");
+    Player dealer = new Player("딜러");
     public int Winner { get; private set; }
     public void Run()
     {
@@ -38,8 +40,6 @@ public class GamePlay
         Console.Clear();
         bet.BettingPrint();
         bool bust = false;
-        Player player = new Player("플레이어");
-        Player dealer = new Player("딜러");
         Console.WriteLine("=== 블랙잭 게임 ===\r\n\r\n카드를 섞는 중...\r\n\r\n=== 초기 패 ===");
         Console.WriteLine();
         string card = deck.Draw();
